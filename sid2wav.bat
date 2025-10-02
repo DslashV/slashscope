@@ -1,0 +1,16 @@
+@echo off
+echo paste the path to the sid file here:
+set /p sidfile=
+echo type the output file
+set /p output=
+
+if not exist sidplayfp.exe (
+	echo could not find sidplayfp
+	echo you must place sidplayfp in your path or in the same folder as the bat file
+	pause
+)
+
+sidplayfp -u2 -u3 -w%output%1.wav %sidfile%
+sidplayfp -u1 -u3 -w%output%2.wav %sidfile%
+sidplayfp -u1 -u2 -w%output%3.wav %sidfile%
+sidplayfp -w%output%mas.wav %sidfile%
