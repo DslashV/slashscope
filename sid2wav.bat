@@ -10,7 +10,7 @@ if not exist sidplayfp.exe (
 	pause
 )
 
-sidplayfp -u2 -u3 -w%output%1.wav %sidfile%
-sidplayfp -u1 -u3 -w%output%2.wav %sidfile%
-sidplayfp -u1 -u2 -w%output%3.wav %sidfile%
-sidplayfp -w%output%mas.wav %sidfile%
+sidplayfp -u2 -u3 -w%output%chan1.wav %sidfile%
+sidplayfp -u1 -u3 -w%output%chan2.wav %sidfile%
+sidplayfp -u1 -u2 -w%output%chan3.wav %sidfile%
+sidplayfp -w%output%chanmas.wav %sidfile%
