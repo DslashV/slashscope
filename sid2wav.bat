@@ -11,7 +11,7 @@ if not exist sidplayfp.exe (
 )
 
 sidplayfp -u2 -u3 -g1 -w%output%chan1.wav %sidfile%
-sidplayfp -u1 -u3 -g1-w%output%chan2.wav %sidfile%
+sidplayfp -u1 -u3 -g1 -w%output%chan2.wav %sidfile%
 sidplayfp -u1 -u2 -g1 -w%output%chan3.wav %sidfile%
 sidplayfp -u1 -u2 -u3 -w%output%chanpcm.wav %sidfile%
 sidplayfp -w%output%chanmas.wav %sidfile%
