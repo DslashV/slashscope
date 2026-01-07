@@ -1,0 +1,4 @@
+@echo off
+sidplayfp -u2 -u3 -wch1.wav "C:\Users\player1\Downloads\GTUltra-1.5.5 (2)\GTUltra-1.5.5\win32\HF-Filet of Filters.sid"
+sidplayfp -u1 -u3 -wch2.wav "C:\Users\player1\Downloads\GTUltra-1.5.5 (2)\GTUltra-1.5.5\win32\HF-Filet of Filters.sid"
+sidplayfp -u1 -u2 -wch3.wav "C:\Users\player1\Downloads\GTUltra-1.5.5 (2)\GTUltra-1.5.5\win32\HF-Filet of Filters.sid"
