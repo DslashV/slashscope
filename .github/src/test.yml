@@ -1,4 +1,4 @@
 - uses: actions/upload-artifact@v4
   with:
     name: test
-    path: C:\Users\player1\slashscope\
+    path: C:\Users\player1\slashscope\*
