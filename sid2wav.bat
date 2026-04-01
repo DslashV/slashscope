@@ -3,6 +3,8 @@ echo paste the path to the sid file here:
 set /p sidfile=
 echo type the output file
 set /p output=
+echo type in the length of the sid (in seconds only)
+set /p timesec=
 
 if not exist sidplayfp.exe (
 	echo could not find sidplayfp
@@ -11,8 +13,8 @@ if not exist sidplayfp.exe (
 )
     
     
-C:\sidplayfp\sidplayfp.exe -u2 -u3 -g1 -w%output%chan1sid1.wav %sidfile%
-C:\sidplayfp\sidplayfp.exe -u1 -u3 -g1 -w%output%chan2sid1.wav %sidfile%
-C:\sidplayfp\sidplayfp.exe -u1 -u2 -g1 -w%output%chan3sid1.wav %sidfile%
-C:\sidplayfp\sidplayfp.exe -u1 -u2 -u3 -w%output%chanpcmsid1.wav %sidfile%
-C:\sidplayfp\sidplayfp.exe -w%output%chanmassid1.wav %sidfile%
+C:\sidplayfp\sidplayfp.exe -u2 -u3 -g1 -t%timesec% -w%output%chan1sid1.wav %sidfile%
+C:\sidplayfp\sidplayfp.exe -u1 -u3 -g1 -t%timesec% -w%output%chan2sid1.wav %sidfile%
+C:\sidplayfp\sidplayfp.exe -u1 -u2 -g1 -t%timesec% -w%output%chan3sid1.wav %sidfile%
+C:\sidplayfp\sidplayfp.exe -u1 -u2 -u3 -t%timesec% -w%output%chanpcmsid1.wav %sidfile%
+C:\sidplayfp\sidplayfp.exe -t%timesec% -w%output%chanmassid1.wav %sidfile%
