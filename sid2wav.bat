@@ -10,17 +10,17 @@ setx /p sidplayfpexe=
 echo you want to disable samples? (useful if you want to hear SIDs with the echo routine) (Y for yes, N for no)
 set /p smpen=
 
-if %smpen%=="N" {
+if %smpen%=="N" (
 	%sidplayfpexe% -u2 -u3 -t%timesec% -w%output%chan1sid1.wav %sidfile%
 	%sidplayfpexe% -u1 -u3 -t%timesec% -w%output%chan2sid1.wav %sidfile%
 	%sidplayfpexe% -u1 -u2 -t%timesec% -w%output%chan3sid1.wav %sidfile%
 	%sidplayfpexe% -u1 -u2 -t%timesec% -w%output%chanpcmsid1.wav %sidfile%
 	%sidplayfpexe% -t%timesec% -w%output%chanmassid1.wav %sidfile%
-} else {
+) else (
 	%sidplayfpexe% -u2 -u3 -g1 -t%timesec% -w%output%chan1sid1.wav %sidfile%
 	%sidplayfpexe% -u1 -u3 -g1 -t%timesec% -w%output%chan2sid1.wav %sidfile%
 	%sidplayfpexe% -u1 -u2 -g1 -t%timesec% -w%output%chan3sid1.wav %sidfile%
 	%sidplayfpexe% -u1 -u2 -u3 -t%timesec% -w%output%chanpcmsid1.wav %sidfile%
 	%sidplayfpexe% -t%timesec% -w%output%chanmassid1.wav %sidfile%
-}
+)
 goto :eof
