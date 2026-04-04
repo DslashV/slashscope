@@ -6,7 +6,7 @@ set /p output=
 echo type in the length of the sid (in seconds only)
 set /p timesec=
 echo put in the sidplayfp exe file here:
-set /p sidplayfpexe=
+setx /p sidplayfpexe=
 echo you want to disable samples? (useful if you want to hear SIDs with the echo routine) (Y for yes, N for no)
 set /p smpen=
 
