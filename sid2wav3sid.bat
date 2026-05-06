@@ -18,5 +18,5 @@ C:\sidplayfp\sidplayfp.exe -u1 -u2 -u3 -u4 -u6 -u7 -u8 -u9 -w%output%chan2sid2.w
 C:\sidplayfp\sidplayfp.exe -u1 -u2 -u3 -u4 -u5 -u7 -u8 -u9 -w%output%chan3sid2.wav %sidfile%
 C:\sidplayfp\sidplayfp.exe -u1 -u2 -u3 -u4 -u5 -u6 -u8 -u9 -w%output%chan1sid3.wav %sidfile%
 C:\sidplayfp\sidplayfp.exe -u1 -u2 -u3 -u4 -u5 -u6 -u7 -u9 -w%output%chan2sid3.wav %sidfile%
-C:\sidplayfp\sidplayfp.exe -u1 -u2 -u3 -u4 -u5 -u6 -u8 -w%output%chan3sid3.wav %sidfile%
+C:\sidplayfp\sidplayfp.exe -u1 -u2 -u3 -u4 -u5 -u6 -u7 -u8 -w%output%chan3sid3.wav %sidfile%
 C:\sidplayfp\sidplayfp.exe -w%output%chanmassid1.wav %sidfile%
